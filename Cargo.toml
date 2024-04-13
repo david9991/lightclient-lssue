@@ -1,0 +1,15 @@
+[package]
+name = "issue-test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sp-core = "26.0.0"
+tokio = "1.34.0"
+subxt = { version = "0.35.2", features = ["unstable-light-client", "unstable-reconnecting-rpc-client"] }
+subxt-signer = { version = "0.35.2", features = ["subxt"] }
+subxt-lightclient = "0.35.2"
+tracing-subscriber = "0.3.18"
+failure = "0.1.8"
